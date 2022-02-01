@@ -1,0 +1,186 @@
+:root {
+	--smaller: .75;
+}
+
+@font-face {
+	font-family: "helvetica-neue-lt-std-93-black-extended";
+	src: url("https://candyfonts.com/wp-data/2019/04/06/51184/HelveticaNeueLTStd-BlkEx.otf") format("woff"),
+		url("https://candyfonts.com/wp-data/2019/04/06/51184/HelveticaNeueLTStd-BlkEx.otf") format("opentype"),
+		url("https://candyfonts.com/wp-data/2019/04/06/51184/HelveticaNeueLTStd-BlkEx.otf") format("truetype");
+}
+
+body {
+	background-image: url('/SC_EBYSPLASHPAGE_BG.jpg');
+	align-items: center;
+	font-family: "Helvetica Neue LT Com 93 Black Extended", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
+		sans-serif;
+	font-weight: 800;
+	letter-spacing: .2rem;
+}
+
+@keyframes houseSpin {
+	0% {
+		opacity: 1;
+		transform: rotateX(90deg);
+	}
+	50% {
+		opacity: 0.5;
+		transform: rotateX(0deg);
+	}
+	100% {
+		display: none;
+		opacity: 0;
+		transform: rotateX(90deg);
+	}
+}
+
+#top {
+	display: block;
+	max-width: 60%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#house {
+	display: block;
+	max-width: 45%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2%;
+}
+
+#playbutton {
+	display: block;
+	max-width: 12%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -25%;
+	margin-bottom: 12%;
+}
+
+#teaser {
+	width: 50%;
+	height: auto;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+#songname {
+	display: block;
+	max-width: 65%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2%;
+}
+
+#presave {
+	display: block;
+	max-width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+}
+
+.grow {
+	transition: all .2s ease-in-out;
+}
+#presave:hover {
+	transform: scale(1.2);
+}
+
+#stuff {
+	display: block;
+	max-width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+/* #house:hover {
+	animation-name: myAnimation;
+	animation-duration: 2500ms;
+	animation-fill-mode: forwards;
+} */
+
+.container {
+	color: #fafae3;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
+		sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+li {
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
+li span {
+	display: block;
+	font-size: 4.5rem;
+}
+
+#countdown {
+	display: flex;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+	h1 {
+		font-size: calc(1rem * var(--smaller));
+	}
+
+	li {
+		font-size: calc(.7rem * var(--smaller));
+	}
+
+	li span {
+		font-size: calc(2.875rem * var(--smaller));
+	}
+}
+
+#footer {
+	display: flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: url('/SC_EBYSPLASHPAGE_BG.jpg');
+	color: white;
+	align-items: center;
+	justify-content: center;
+	font-size: larger;
+	text-transform: uppercase;
+}
+
+#footer.a {
+	color: #ea1305;
+}
+a:active {
+	color: #ea1305;
+}
+
+a:visited {
+	color: #ea1305;
+}
