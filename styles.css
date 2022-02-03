@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url('images/SC_EBYSPLASHPAGE_BG.JPG');
+	background-image: url("images/bg.jpg");
 	align-items: center;
 	font-family: "Helvetica Neue LT Com 93 Black Extended", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
 		sans-serif;
