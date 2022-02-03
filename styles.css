@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url("images/bg.jpg");
+	background-color: black;
 	align-items: center;
 	font-family: "Helvetica Neue LT Com 93 Black Extended", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
 		sans-serif;
