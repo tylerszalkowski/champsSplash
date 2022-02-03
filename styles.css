@@ -171,11 +171,11 @@ li span {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-image: url('/SC_EBYSPLASHPAGE_BG.jpg');
+	background-image: url("images/bg.jpg);
 	color: white;
 	align-items: center;
 	justify-content: center;
-	font-size: larger;
+	font-size: large;
 	text-transform: uppercase;
 }
 
