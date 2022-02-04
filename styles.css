@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url('/bg.jpg');
+	background-image: url('images/bg.jpg');
 	align-items: center;
 	font-family: "Helvetica Neue LT Com 93 Black Extended", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
 		sans-serif;
@@ -256,7 +256,7 @@ a:visited {
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		background-image: url('/bg.jpg');
+		background-image: url('images/bg.jpg');
 		background-size: cover;
 		color: white;
 		align-items: center;
