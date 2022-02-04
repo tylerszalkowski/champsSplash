@@ -10,14 +10,13 @@
 }
 
 body {
-	background-image: url("images/bg.jpg");
+	background-image: url('/bg.jpg');
 	align-items: center;
 	font-family: "Helvetica Neue LT Com 93 Black Extended", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Segoe UI",
 		sans-serif;
 	font-weight: 800;
 	letter-spacing: .2rem;
 	min-height: 100%;
-	margin-top: 10%;
 }
 
 html {
@@ -137,11 +136,15 @@ li {
 	list-style-type: none;
 	padding: 1em;
 	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
 }
 
 li span {
 	display: block;
 	font-size: 4.5rem;
+	justify-content: center;
+	align-items: center;
 }
 
 #countdown {
@@ -153,10 +156,6 @@ li span {
 }
 
 @media all and (max-width: 768px) {
-	h1 {
-		font-size: calc(1rem * var(--smaller));
-	}
-
 	li {
 		font-size: calc(.7rem * var(--smaller));
 	}
@@ -172,15 +171,15 @@ li span {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
+	background-image: url('/bg.jpg');
 	color: white;
 	align-items: center;
 	justify-content: center;
-	font-size: large;
+	font-size: larger;
 	text-transform: uppercase;
 }
 
-#footer.a {
+a {
 	color: #ea1305;
 }
 a:active {
@@ -189,4 +188,99 @@ a:active {
 
 a:visited {
 	color: #ea1305;
+}
+
+@media screen and (max-width: 480px), (max-width: 768px) {
+	body {
+		background-color: black;
+		background-image: url('/bg.jpg');
+		background-size: cover;
+	}
+
+	#top {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#house {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -2%;
+	}
+
+	#playbutton {
+		display: block;
+		max-width: 25%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -50%;
+	}
+
+	#teaser {
+		width: 100%;
+		height: auto;
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+	}
+
+	#songname {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 18%;
+	}
+
+	#presave {
+		display: block;
+		max-width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0%;
+	}
+
+	#footer {
+		display: flex;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-image: url('/bg.jpg');
+		background-size: cover;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		font-size: x-small;
+		text-transform: uppercase;
+	}
+
+	li {
+		font-size: calc(.7rem * var(--smaller));
+		justify-content: center;
+		align-items: center;
+	}
+
+	li span {
+		font-size: calc(2.875rem * var(--smaller));
+		justify-content: center;
+		align-items: center;
+	}
+	div#countdown {
+		margin-left: -3.25%;
+	}
+
+	#stuff {
+		margin-top: -1%;
+	}
 }
